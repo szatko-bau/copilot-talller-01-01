@@ -1,0 +1,13 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jwt-backend:latest
+    container_name: jwt-backend
+    ports:
+      - "8000:8000"
+    environment:
+      # Override this value with a strong random secret in production
+      SECRET_KEY: "change-me-in-production-use-a-long-random-string"
+    restart: unless-stopped
