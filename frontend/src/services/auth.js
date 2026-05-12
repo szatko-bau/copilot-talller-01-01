@@ -2,7 +2,6 @@ const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 const TOKEN_KEY = 'access_token';
 const REFRESH_KEY = 'refresh_token';
-const USERNAME_KEY = 'username';
 
 export async function login(username, password) {
   const body = new URLSearchParams({ username, password });
@@ -46,5 +45,4 @@ export function isAuthenticated() {
 export function logout() {
   sessionStorage.removeItem(TOKEN_KEY);
   sessionStorage.removeItem(REFRESH_KEY);
-  sessionStorage.removeItem(USERNAME_KEY);
 }
