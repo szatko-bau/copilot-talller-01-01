@@ -1,0 +1,66 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #0F172A;
+  --color-secondary: #E0E7FF;
+  --color-tertiary: #64748B;
+  --color-neutral: #F1F5F9;
+  --color-background: #FAFAFA;
+  --color-surface: #F8F9FA;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #64748B;
+  --color-border: #F1F5F9;
+  --color-accent: #0F172A;
+
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-size-display: 60px;
+  --font-size-body: 16px;
+  --font-size-label: 14px;
+
+  --spacing-base: 12px;
+  --spacing-sm: 1px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-gap: 8px;
+  --spacing-card: 18px;
+  --spacing-section: 64px;
+
+  --radius-sm: 4px;
+  --radius-md: 15px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+  --shadow-surface:
+    rgba(0,0,0,0.04) 0px 0px 0px 1px inset,
+    rgba(0,0,0,0.06) 0px 0px 0px 1px,
+    rgba(0,0,0,0.06) 0px 1px 1px -0.5px,
+    rgba(0,0,0,0.06) 0px 3px 3px -1.5px,
+    rgba(0,0,0,0.06) 0px 6px 6px -3px,
+    rgba(0,0,0,0.06) 0px 12px 12px -6px,
+    rgba(0,0,0,0.06) 0px 24px 24px -12px;
+
+  --blur: 12px;
+  --transition-fast: 160ms ease;
+  --transition-base: 200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+html, body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  line-height: 24px;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
