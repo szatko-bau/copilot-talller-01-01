@@ -41,7 +41,7 @@ The API will be available at `http://localhost:8000`.
 
 #### With Poetry (local)
 
-```bash
+```bashasddsadsa
 cd backend
 poetry install
 poetry run uvicorn app.main:app --reload
